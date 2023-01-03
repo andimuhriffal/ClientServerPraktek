@@ -24,7 +24,7 @@ import lombok.NoArgsConstructor;
 public class Anggota {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long anggotaId;
+    private Long Id;
     private String nama;
     private String alamat;
 }
