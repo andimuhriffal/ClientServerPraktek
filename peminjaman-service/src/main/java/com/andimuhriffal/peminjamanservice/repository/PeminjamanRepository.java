@@ -13,8 +13,6 @@ import org.springframework.stereotype.Repository;
  * @author Andi Muhammad Riffal
  */
 @Repository
-public interface PeminjamanRepository extends JpaRepository<Peminjaman, Long> {
-
-    public Peminjaman findByPeminjamanId(Long peminjamanId);
-
+public interface PeminjamanRepository extends JpaRepository<Peminjaman, Long>{
+    public Peminjaman findPeminjamanById(Long id);
 }

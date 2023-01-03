@@ -11,14 +11,12 @@ import lombok.NoArgsConstructor;
 
 /**
  *
- * @author Andi Muhammad Riffal
+ * @author Acer
  */
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 public class ResponseTemplateVO {
-    private Pengembalian pengembalian;
     private Peminjaman peminjaman;
-
-   
+    private Pengembalian pengembalian;
 }

@@ -10,11 +10,9 @@ import org.springframework.stereotype.Repository;
 
 /**
  *
- * @author Andi Muhammad Riffal
+ * @author Acer
  */
 @Repository
-public interface PengembalianRepository extends JpaRepository<Pengembalian, Long> {
-
-    public Pengembalian findByPengembalianId(Long pengembalianId);
-
+public interface PengembalianRepository extends JpaRepository<Pengembalian, Long>{
+    public Pengembalian findPengembalianById(Long id);
 }

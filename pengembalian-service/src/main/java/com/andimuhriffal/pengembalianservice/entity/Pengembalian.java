@@ -4,17 +4,17 @@
  */
 package com.andimuhriffal.pengembalianservice.entity;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
  *
- * @author Andi Muhammad Riffal
+ * @author Acer
  */
 @Entity
 @Data
@@ -23,17 +23,9 @@ import lombok.NoArgsConstructor;
 public class Pengembalian {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-   private Long pengembalianId;
-    private String tglkembali;
-    private String terlambat;
-    private String denda;
-
-    public String getPeminjamanId() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    public Pengembalian savePengembalian(Pengembalian pengembalian) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-    
+    private Long id;
+    private Long peminjamanId;
+    private String tglKembali;
+    private int terlambat;
+    private int denda;
 }

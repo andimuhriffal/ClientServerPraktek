@@ -16,7 +16,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Anggota {
-    private Long anggotaId;
+    private Long Id;
     private String nama;
     private String alamat;
 }

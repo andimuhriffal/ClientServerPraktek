@@ -23,9 +23,9 @@ import lombok.NoArgsConstructor;
 public class Peminjaman {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long peminjamanId;
-    private Long anggotaId;
-    private Long bukuId;
-    private String tglpinjam;
-    private String tglkembali;
+    private Long id;
+    private Long idAnggota;
+    private Long idBuku;
+    private String tglPinjam;
+    private String tglKembali;
 }
